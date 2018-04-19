@@ -1,3 +1,4 @@
+# *_* coding:utf-8 *_*
 import json
 from urllib import request, parse
 
@@ -89,6 +90,12 @@ def proxy():
     html = response.read().decode("utf-8")
     # 打印信息
     print(html)
+
+
+def test():
+    pass
+
+
 
 if __name__ == "__main__":
 
