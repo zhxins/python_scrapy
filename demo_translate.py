@@ -23,7 +23,7 @@ def youdao_tanslate():
         }
 
         form_data = {}
-        form_data['i'] = '美丽'
+        form_data['i'] = '漂亮'
         form_data['from'] = 'AUTO'
         form_data['to'] = 'AUTO'
         form_data['smartresult'] = 'dict'
