@@ -92,13 +92,8 @@ def proxy():
     print(html)
 
 
-def test():
-    pass
-
-
-
 if __name__ == "__main__":
 
-    # youdao_tanslate()
+    youdao_tanslate()
     # get_csdn()
-    proxy()
+    # proxy()
