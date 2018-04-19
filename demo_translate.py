@@ -23,7 +23,7 @@ def youdao_tanslate():
         }
 
         form_data = {}
-        form_data['i'] = '漂亮'
+        form_data['i'] = 'nice'
         form_data['from'] = 'AUTO'
         form_data['to'] = 'AUTO'
         form_data['smartresult'] = 'dict'
@@ -70,7 +70,12 @@ def get_csdn():
 
 
 def proxy():
+    """
+    urllib_proxy代理方法
 
+    :rtype: object
+    :return:
+    """
     # 访问网址
     url = 'http://www.whatismyip.com.tw/'
     # 这是代理IP
