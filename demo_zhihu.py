@@ -14,7 +14,7 @@ links = soup.find_all('img', "origin_image zh-lightbox-thumb", src=re.compile(r'
 print(links)
 
 # 设置保存图片的路径，否则会保存到程序当前路径
-path = r'E:\test\images'  # 路径前的r是保持字符串原始值的意思，就是说不对其中的符号进行转义
+path = r'E:\images'  # 路径前的r是保持字符串原始值的意思，就是说不对其中的符号进行转义
 
 # 只会创建一级目录，即images目录，前提是test目录必须存在
 if os.path.isdir(path):
