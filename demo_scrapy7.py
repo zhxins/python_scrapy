@@ -3,6 +3,7 @@ from urllib import request
 from bs4 import BeautifulSoup
 
 
+# https://blog.csdn.net/c406495762/article/details/71158264
 def getContent():
     download_url = "http://www.biqukan.com/1_1094/5403177.html"
     head = {}
