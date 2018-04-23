@@ -26,3 +26,4 @@ for link in links:
     print(link.attrs['src'])
     # 保存链接并命名，time.time()返回当前时间戳防止命名冲突
     request.urlretrieve(link.attrs['src'], path + '\%s.jpg' % time.time())  # 使用request.urlretrieve直接将所有远程链接数据下载到本地
+    request.urlretrieve()
