@@ -53,10 +53,13 @@ def download():
     file = open('一念永恒.txt', 'w', encoding='utf-8')
     # 一念永恒小说目录地址
     target_url = 'http://www.biqukan.com/1_1094/'
-    # User-Agent
+    # User-Agent 出现httplib.BadStatusLine错误，有可能是user-agent的值不对
+    UA = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    ua = 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19'
     head = {}
     head[
-        'User-Agent'] = 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19'
+        'User-Agent'] = UA
+
     target_req = request.Request(url=target_url, headers=head)
     target_response = request.urlopen(target_req)
     target_html = target_response.read().decode('gbk', 'ignore')
@@ -100,11 +103,10 @@ def download():
                         file.write('\n')
                 file.write('\n\n')
                 # 打印爬取进度
-                sys.stdout.write("已下载:%.2f%%" % float(index / numbers) + '\r')
+                sys.stdout.write("已下载:%.2f%%" % float((index * 100) / numbers) + '\r')
                 sys.stdout.flush()
                 index += 1
     file.close()
-
 
 
 if __name__ == '__main__':
