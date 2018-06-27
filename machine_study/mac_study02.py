@@ -2,7 +2,7 @@ from math import log
 
 
 def createDataSet():
-    dataSet = [[0, 0, 0, 0, 'no'],  # 数据集
+    dataSet = [[0, 0, 0, 0, 'no'],    # 数据集
                [0, 0, 0, 1, 'no'],
                [0, 1, 0, 1, 'yes'],
                [0, 1, 1, 0, 'yes'],

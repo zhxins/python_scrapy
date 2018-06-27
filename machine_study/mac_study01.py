@@ -1,6 +1,6 @@
 # _*_ coding: utf-8 _*_
 """
-机器学习第一讲 ：k-近邻算法
+机器学习第一讲 ： k-近邻算法
 """
 import numpy as np
 import operator
