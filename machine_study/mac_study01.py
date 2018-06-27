@@ -6,6 +6,7 @@ import numpy as np
 import operator
 import time
 
+
 def createDataSet():
 
     group = np.array([[1,101],[5,89],[108,5],[115,8]])
