@@ -48,7 +48,7 @@ def downImage():
             img_req = requests.get(url=target_url, headers=headers)
 
             # 如果正常返回数据做下载操作
-            if img_req.status_code == 200:
+            if  img_req.status_code == 200:
                 img_req.encoding = 'utf-8'
                 img_html = img_req.text
                 img_bf_1 = BeautifulSoup(img_html, 'lxml')
