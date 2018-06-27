@@ -23,6 +23,7 @@ def createDataSet():
 
 """
 根据给定的数据计算经验熵（香农熵）
+熵定位为信息的期望值，表示随机变量的不确定性，熵越大，随机变量的不确定性就越大
 """
 def calcShannonEnt(dataSet):
     numEntires = len(dataSet)
