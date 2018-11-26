@@ -1,5 +1,7 @@
+"""
+机器学习第一讲 ：决策树基础篇
+"""
 from math import log
-
 
 def createDataSet():
     dataSet = [[0, 0, 0, 0, 'no'],    # 数据集

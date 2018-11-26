@@ -10,12 +10,6 @@ Parameters:
     header - headers信息
 Returns:
     无
-Author:
-    Jack Cui
-Blog:
-    http://blog.csdn.net/c406495762
-Modify:
-    2017-08-07
 """
 def hero_imgs_download(url, header):
     req = requests.get(url = url, headers = header).json()
