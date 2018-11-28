@@ -3,6 +3,7 @@ from PIL import ImageDraw
 from PIL import ImageFont
 import random
 
+# http://www.cnblogs.com/6324TV/p/8811249.html
 def getRandomColor():
     c1 = random.randint(0, 255)
     c2 = random.randint(0, 255)
