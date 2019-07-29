@@ -1,7 +1,8 @@
+import random
+
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
-import random
 
 # http://www.cnblogs.com/6324TV/p/8811249.html
 def getRandomColor():

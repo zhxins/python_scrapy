@@ -25,5 +25,11 @@ data_today=ts.get_today_ticks(ticker)
 print("获取当日历史分笔数据")
 print(data_today)
 data_today.to_csv('000547.csv')
-data_today.to_excel('000547.xlsx')
+# data_today.to_excel('000547.xlsx')
+
+df = ts.realtime_boxoffice()
+print(df)
+
+dd = ts.day_cinema()
+print(dd)
 
